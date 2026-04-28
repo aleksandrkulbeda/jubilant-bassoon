@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html class="light" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Verdant Studio - Главная</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#5a682f",
+                        "inverse-on-surface": "#f1f1ef",
+                        "on-background": "#1a1c1b",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e2e3e1",
+                        "on-primary-fixed": "#0b2013",
+                        "primary": "#061b0e",
+                        "outline": "#737973",
+                        "surface-container-low": "#f4f4f2",
+                        "surface-dim": "#dadad8",
+                        "secondary-fixed-dim": "#bdce89",
+                        "primary-fixed-dim": "#b4cdb8",
+                        "surface-tint": "#4d6453",
+                        "tertiary-fixed-dim": "#ffb59a",
+                        "on-tertiary-container": "#d37c5a",
+                        "surface-bright": "#f9f9f7",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#f9f9f7",
+                        "secondary-fixed": "#d9eaa3",
+                        "primary-fixed": "#d0e9d4",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#d6e7a1",
+                        "on-tertiary-fixed": "#380d00",
+                        "on-surface": "#1a1c1b",
+                        "on-secondary-fixed-variant": "#3e4c16",
+                        "on-primary-container": "#819986",
+                        "tertiary": "#300a00",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#b4cdb8",
+                        "secondary": "#56642b",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e2e3e1",
+                        "on-tertiary-fixed-variant": "#763317",
+                        "surface-container-high": "#e8e8e6",
+                        "on-surface-variant": "#434843",
+                        "tertiary-container": "#521801",
+                        "surface-container": "#eeeeec",
+                        "inverse-surface": "#2f3130",
+                        "primary-container": "#1b3022",
+                        "on-secondary-fixed": "#161f00",
+                        "surface": "#f9f9f7",
+                        "outline-variant": "#c3c8c1",
+                        "tertiary-fixed": "#ffdbcf",
+                        "on-primary-fixed-variant": "#364c3c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Noto Serif"],
+                        "label-md": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "display-lg": ["Noto Serif"],
+                        "headline-lg": ["Noto Serif"],
+                        "body-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .animate-pulse-subtle {
+            animation: pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse-subtle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.85; }
+        }
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased pb-24 md:pb-0">
+<header class="fixed top-0 w-full flex justify-between items-center px-6 h-16 bg-stone-50/80 backdrop-blur-md dark:bg-stone-900/80 border-b border-stone-200/50 dark:border-stone-800/50 shadow-sm shadow-emerald-900/5 z-50">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-fixed">
+<img alt="User Profile" data-alt="Close-up portrait of a friendly man in a straw hat with a garden background, warm natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpj8VHj-4iujPI7IizT8mqnvctgqjX_bUfNccWPOUC91J9qnkdb6PMMcqaFD0aDwr3lMPV5BFHTB20dVXZByVCHksi3P8MWtwsO1uQT-vEc81NTw2vczr_on69l9fZpHys6fmJBATr6b11gHZOPxh1rsPq29KRkfGfV_EkJc_Au6YpklZiHzB7DrQfJs94w0H-Fs_Hrck33aQxrTX3R6FDf1UnHTQ6nUfYKkypTjPyn33u4DoXwdIYQwxOcA178QJTk3STZtZZHKQ"/>
+</div>
+<span class="text-xl font-serif font-semibold text-emerald-950 dark:text-emerald-100">Verdant Studio</span>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+<span class="material-symbols-outlined text-emerald-900 dark:text-emerald-50" data-icon="notifications">notifications</span>
+</button>
+</header>
+<main class="max-w-[1280px] mx-auto px-4 md:px-margin-desktop pt-24 pb-12">
+<section class="mb-12">
+<p class="font-label-md text-label-md text-on-primary-container mb-2 uppercase tracking-widest">Доброе утро, Алла</p>
+<h1 class="font-display-lg text-display-lg text-primary mb-4">Ваш сад процветает!</h1>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-16">
+<div class="md:col-span-8 group relative rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-surface-container-lowest transition-transform hover:scale-[1.01] duration-300">
+<div class="aspect-[16/9] md:aspect-auto md:h-[400px] relative">
+<img alt="Lush private garden" class="w-full h-full object-cover" data-alt="Lush residential garden at dawn with morning dew on hosta leaves and soft ethereal light filtering through maple trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7kNnNUeHnvZhNoCzr1R1cx3dSQ5RFNraWs9bslrm75iNT5U0Hv7bm8gfYtPHHdZd8Mrtec4-iVBfVab89NUlHK60XEq_6uzBC7g5yNiTIao4296U_U1tZr-qV7DRXmitpqWLB8TTVGsHU2whBrC1YMjmfq0PmQX0mMVKlT8xDdgiqkBFUzhq3onUnx43ELJ74dpTmvyD_m0rfJVsXhaUsqNMYWZS1LRZFGHBpSS-fclnW_ArzxWPRyJ-8LDOcCXG510uA9zAvjBE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full font-label-md text-[10px] uppercase tracking-wider">Здоровье 98%</span>
+<span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full font-label-md text-[10px] uppercase tracking-wider">Зона 9a</span>
+</div>
+<p class="font-headline-md text-headline-md mb-2">Утреннее наблюдение</p>
+<p class="font-body-md text-white/80 max-w-md">Уровни гидратации оптимальны. Утренняя роса обеспечила 0,4 мм естественной влаги для ваших японских кленов.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 bg-white rounded-xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex flex-col justify-between border border-stone-100">
+<div>
+<div class="flex justify-between items-start mb-8">
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase">Shymkent</p>
+<p class="font-headline-md text-headline-md text-primary" id="weather-description">Загрузка...</p>
+</div>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-5xl" data-icon="wb_sunny" id="weather-icon">wb_sunny</span>
+</div>
+<div class="flex items-baseline gap-2 mb-8">
+<span class="font-display-lg text-display-lg text-primary" id="weather-temp">--°</span>
+<span class="font-body-lg text-on-surface-variant">C</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-3 border-t border-stone-50">
+<span class="font-label-md text-on-surface-variant">Влажность</span>
+<span class="font-label-md text-primary" id="weather-humidity">--%</span>
+</div>
+<div class="flex justify-between items-center py-3 border-t border-stone-50">
+<span class="font-label-md text-on-surface-variant">Скорость ветра</span>
+<span class="font-label-md text-primary" id="weather-wind">-- км/ч</span>
+</div>
+<div class="flex justify-between items-center py-3 border-t border-stone-50">
+<span class="font-label-md text-on-surface-variant">УФ-индекс</span>
+<span class="font-label-md text-primary" id="weather-uv">Умеренный</span>
+</div>
+</div>
+</div>
+</div>
+<section class="mb-16">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Быстрые действия</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<button onclick="location.href='doctor.html'" class="flex items-center justify-between p-6 bg-primary-container text-white rounded-xl shadow-lg hover:shadow-xl transition-all active:scale-95 group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-3xl text-primary-fixed-dim" data-icon="center_focus_weak">center_focus_weak</span>
+<div class="text-left">
+<p class="font-label-md text-label-md uppercase tracking-wider">Сканировать растение</p>
+<p class="font-body-md text-primary-fixed-dim text-sm opacity-80">Выявление вредителей или болезней</p>
+</div>
+</div>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<a class="flex items-center justify-between p-6 bg-surface-container-lowest text-primary rounded-xl border border-stone-100 shadow-sm hover:shadow-md transition-all active:scale-95 group" href="planner.html"><div class="flex items-center gap-4"><span class="material-symbols-outlined text-3xl text-secondary" data-icon="architecture">architecture</span><div class="text-left"><p class="font-label-md text-label-md uppercase tracking-wider">Планировать грядку</p><p class="font-body-md text-on-surface-variant text-sm">Спланируйте свой весенний огород</p></div></div><span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+</section>
+
+<section class="mb-16">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">Что посадить сейчас</h2>
+<p class="font-body-md text-on-surface-variant">Рекомендовано для вашего климата в Аксукенте</p>
+</div>
+<button class="text-secondary font-label-md text-label-md uppercase hover:underline" onclick="window.location.href='catalog.html'">Весь каталог</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white rounded-xl overflow-hidden shadow-sm border border-stone-50">
+    <div class="aspect-square relative overflow-hidden">
+    <img alt="Эхинацея" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNAsCuJm1utYiDdKTP4ZO5aB1ffVdlPl8F9bo_rb3IsRr3EPcamHBQY12IkwJaFZcTe0nboA3hZJO9GwauYxctwCnKNF3z2XdcnOG_f3uKkpJ73FHcNI-uyu8BhFH-UJn0ZkGPgPQg1KaVKPTzzOgzhYEmwgTdErfWU-yqaVkbCcBX9C0Si2aCP86qBilBUd69xG-88F51rYw26SXBvsT2Hq-rNTzEk4QMBj_cB1obQvGJ8XADwrF1YRCe8Yp3K-aVPs8r_eBcZwI"/>
+    </div>
+    <div class="p-6"><p class="font-headline-md text-xl text-primary mb-1">Эхинацея пурпурная</p></div>
+</div>
+</div>
+</section>
+</main>
+
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pt-2 pb-6 bg-white/90 backdrop-blur-lg border-t border-stone-100 md:hidden">
+<a class="flex flex-col items-center justify-center text-emerald-900" href="index.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home_max</span>
+<span class="font-sans text-[10px] font-semibold uppercase">Главная</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400" href="catalog.html">
+<span class="material-symbols-outlined">potted_plant</span>
+<span class="font-sans text-[10px] font-semibold uppercase">Каталог</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400" href="planner.html">
+<span class="material-symbols-outlined">architecture</span>
+<span class="font-sans text-[10px] font-semibold uppercase">Планировщик</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400" href="doctor.html">
+<span class="material-symbols-outlined">photo_camera</span>
+<span class="font-sans text-[10px] font-semibold uppercase">Доктор</span>
+</a>
+</nav>
+
+<script>
+async function fetchWeather() {
+    const apiKey = 'ffdb66f8a2ae57a8f906e40a29669a16';
+    const city = 'Shymkent';
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=ru`;
+
+    const elements = {
+        temp: document.getElementById('weather-temp'),
+        desc: document.getElementById('weather-description'),
+        icon: document.getElementById('weather-icon'),
+        humidity: document.getElementById('weather-humidity'),
+        wind: document.getElementById('weather-wind')
+    };
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        if (data.cod === 200) {
+            elements.temp.innerText = Math.round(data.main.temp) + '°';
+            elements.desc.innerText = data.weather[0].description.charAt(0).toUpperCase() + data.weather[0].description.slice(1);
+            elements.humidity.innerText = data.main.humidity + '%';
+            elements.wind.innerText = Math.round(data.wind.speed * 3.6) + ' км/ч';
+            
+            const iconMap = {'01': 'wb_sunny', '02': 'partly_cloudy_day', '03': 'cloud', '04': 'cloudy_filled', '09': 'rainy', '10': 'rainy_light', '11': 'thunderstorm', '13': 'ac_unit', '50': 'mist'};
+            const iconKey = data.weather[0].icon.substring(0, 2);
+            if (elements.icon) elements.icon.innerText = iconMap[iconKey] || 'wb_sunny';
+        }
+    } catch (error) { console.error('Weather Error:', error); }
+}
+document.addEventListener('DOMContentLoaded', fetchWeather);
+</script>
+</body></html>
