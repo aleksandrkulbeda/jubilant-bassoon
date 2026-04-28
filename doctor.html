@@ -206,7 +206,11 @@ async function init() {
             throw new Error("Библиотека MobileNet не загружена. Проверьте интернет.");
         }
         
-        net = await mobilenet.load();
+        net = await mobilenet.load({
+    version: 1,
+    alpha: 0.25,
+    modelUrl: 'https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0/model.json'
+});
         
         statusLabel.innerText = "ИИ ГОТОВ";
         statusLabel.style.backgroundColor = "#d9eaa3";
