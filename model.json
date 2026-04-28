@@ -1,1 +1,0 @@
-{"weightsManifest": [{"paths": ["https://models.glitch.me/mobilenet/v1/0.25/100/group1-shard1of1.bin"], "weights": [{"name": "Conv2d_0/weights", "shape": [3, 3, 3, 8], "dtype": "float32"}]}]}
