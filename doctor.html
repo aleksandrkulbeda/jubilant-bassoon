@@ -182,7 +182,15 @@ const plantKeywords = ['plant', 'leaf', 'flower', 'tree', 'pot', 'garden', 'dais
 
 async function init() {
     try {
-        statusLabel.innerText = "ПОДКЛЮЧЕНИЕ КАМЕРЫ...";
+         statusLabel.innerText = "ЗАГРУЗКА ЛОКАЛЬНОГО ИИ...";
+
+          net = await mobilenet.load({
+          version: 1,
+            alpha: 0.25,
+           modelUrl: './model.json'
+         });
+
+statusLabel.innerText = "ИИ ГОТОВ (ЛОКАЛЬНО)";
         
         // 1. Настройка камеры
         const stream = await navigator.mediaDevices.getUserMedia({ 
